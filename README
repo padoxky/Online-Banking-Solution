@@ -1,5 +1,7 @@
-1.	Sign-up: In order to create an account, you must visit a branch and have a teller or manager add you as a new client to the branch.
-2.	Sign-in: Once you’ve been added as a new client, you’ll need to use your client_id and password (defaulted to 12345) to access your account.
+1.	Sign-up: In order to create an account, you must visit a branch and have a teller or manager add you as a new 
+	client to the branch.
+2.	Sign-in: Once you’ve been added as a new client, you’ll need to use your client_id and password (defaulted 
+	to 12345) to access your account.
 3.	Operations:
 	a.	Branch:
 		i.	Read: You can read information about all branches.
@@ -10,6 +12,7 @@
 	d.	Transaction:
 		i.	Withdraw: Choose one of your accounts, and specify amount to withdraw
 		ii.	Deposit: Choose one of your accounts and amount to deposit
-		iii.	Transfer: Choose one of your accounts, specify amount, and the account to which you want to transfer money
+		iii.	Transfer: Choose one of your accounts, specify amount, and the account to which you want to 
+		transfer money
 		iv.	Read: You can query information concerning all the transactions that were made to your accounts
-	4.	Other: For other operations (eg. updating your client info), you will need to visit a branch and have a teller or a manager do that for you.
+4.	Other: For other operations (eg. updating your client info), you will need to visit a branch and have a teller or a manager do that for you.
