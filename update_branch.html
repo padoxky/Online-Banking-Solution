@@ -1,0 +1,55 @@
+<?php include("header.php"); ?>
+<html>
+	<head>
+		<title>Update Branch</title>
+	</head>
+	
+	<script>
+		function validate(form) {
+			fail = validateBranchID(form.branch_id.value)
+			//fail += validateBranchName(form.branch_name.value)
+			//fail += validateManagerID(form.manager_id.value)
+			if (fail == "") 
+				return true
+			else {
+				alert(fail); 
+				return false
+			}
+		}
+		
+		function validateBranchID(field) {
+			if (field == "") 
+				return "No branch ID was entered.\n"
+			return ""
+		}
+		
+		function validateBranchName(field) {
+			if (field == "")
+				return "No branch name was entered.\n"
+			return ""
+		}
+		
+		function validateManagerID(field) {
+			if (field == "")
+				return "No manager ID was entered.\n"
+			return ""
+		}
+	</script>
+	
+	<body>
+		Update a branch: <br/>
+		<form method = "post" action = "update_branch.php" onSubmit = "return validate(this)"> <pre>
+			   Branch ID: <input type = "text" name = "branch_id"/> <br/>
+			 Branch name: <input type = "text" name = "branch_name"/> <br/>
+			     Address: <input type = "text" name = "address"/> <br/>
+			        City: <input type = "text" name = "city"/> <br/>
+			       Phone: <input type = "text" name = "phone"/> <br/>
+			         Fax: <input type = "text" name = "fax"/> <br/>
+			Opening Date: <input type = "text" name = "opening_date"/> <br/>
+			  Manager ID: <input type = "text" name = "manager_id"/> <br/>
+			<input type = "submit" />
+		</pre></form>
+	</body>
+</html>
+
+<?php include("footer.php"); ?>

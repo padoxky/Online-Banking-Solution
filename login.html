@@ -1,0 +1,375 @@
+<style type="text/css">
+    html,body, iframe{
+        width:100%;
+        height:100%;
+        margin:0px;
+        padding:0px;
+    }
+    </style>
+			
+			<div id="banner" class="background-position:right top; width:766px;border:1px solid #c5cee1">
+
+			  <script language="JavaScript" type="text/javascript" src="index_files/keypress.js"></script>
+			  <script language="JavaScript" type="text/javascript">
+				<!--
+				function f3msignin_ForgotPassword()
+				{
+				  if ( document.ForgotPsw.CHKCLICK.value == 'N' )
+				  {
+					return false;
+				  }
+				  else
+				  {
+					if ( document.rbunxcgi.CAFE && document.rbunxcgi.CAFE.checked )
+					{
+					  alert( 'Enhanced Security must not be selected when using \'Forgot Password?\'. \nTo recover your Online Banking Password, click \'Forgot Password?\' only.' );
+					  document.rbunxcgi.Q1.value='';
+					  document.rbunxcgi.CAFE.checked=false;
+					}
+					else
+					{
+					  document.rbunxcgi.CHKCLICK.value = 'N';
+					  document.ForgotPsw.CHKCLICK.value = 'N';
+					  document.ForgotPsw.K1.value = document.rbunxcgi.K1.value;
+					  document.ForgotPsw.submit();
+					}
+				  }
+				}
+				//-->
+			  </script>
+
+				<form id="loginForm" action="../login.cgi" method="post">
+
+					<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+						<tbody><tr>
+							<td colspan="2" style="padding: 15px 0px 10px 20px;">
+								<h2 style="margin:0"><img src="index_files/sign_in.gif" alt="Sign In to Online Banking"></h2>
+							</td>
+						</tr>
+<tr align="left" valign="top">
+							<td style="width: 170px; padding-left: 25px;">
+								<label for="K1"><strong>What Are You?</strong></label><br>
+								<p class="subcopy">
+								<img class="bullet" alt="" src="index_files/bullet-link.gif" border="0"> 
+								<a href="javascript:document.forgotUsername.submit();" tabindex="5">Forgot who I am</a>
+								</p>
+								
+							</td>
+							<td style="width: 190px;">
+							   <script language="JavaScript" type="text/javascript">
+								  <!--
+								  var CAFETimeout=900;
+								  function doCafeCheck()
+								  {
+									checkCafe('You are entering the secure Online Banking transactional area. \nWhen you are finished, please select \'Sign Out\' to close your secure session.',document.rbunxcgi);
+
+									if (document.rbunxcgi.CHKCLICK.value == 'N')
+									{
+									  return false;
+									}
+									else
+									{
+									  document.rbunxcgi.CHKCLICK.value = 'N';
+									  document.ForgotPsw.CHKCLICK.value = 'N';
+									  return true;
+									}
+								  }
+								  //-->
+								</script>
+						
+
+								<noscript>
+								  &amp;amp;amp;amp;amp;amp;lt;input name="NOJAVASCRIPT" type="HIDDEN" value="Y" /&amp;amp;amp;amp;amp;amp;gt;
+								</noscript>
+
+
+								   
+								
+									<div style="width:350px;"><select name="what">
+		<option selected="selected" value="c">Client</option>
+		<option value="t">Teller</option>
+		<option value="m">Manager</option>
+	</select>
+										
+
+										<table style="margin-top: 5px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody><tr>
+												<td valign="top">
+													<input style="float: left; margin-right: 3px; margin-left: 0px;" id="N1" name="N1" tabindex="7" value="" onclick="javascript:if (this.checked) { document.rbunxcgi.NNAME.value='ecatsRememberMe'; } else { document.rbunxcgi.NNAME.value=''; }" type="checkbox">				
+														<span class="subcopy" style="padding-top:3px;"></span>
+												</td>
+												<td class="subcopy" valign="top" width="100%">
+													<label for="N1">Remember who I am</label>
+													<br>
+													 <img src="index_files/bullet-link.gif" alt="" class="bullet" border="0"> 
+													 <a class="linkedtextandicon" href="javascript:kiosk_OpenWinRTB(%20'https://www.rbcroyalbank.com/onlinebanking/remember_my_card/about.html',%20'RTB',%20kiosk_Type3X,%20kiosk_Type3Y,%20kiosk_Type3R%20);" title="Learn More about Remember My Client Card/Username (opens new window)" tabindex="8">
+													 <span>Learn More</span> 
+													 <img src="index_files/newwindow.gif" alt="(opens new window)" class="icon">
+													 </a> 
+													
+													
+												</td>
+											</tr>
+										</tbody></table>
+									</div> <!--//Right Div top-->
+							</td>
+						</tr>
+ <!--//Sign-In-->
+
+						<tr align="left" valign="top">
+							<td style="width: 170px; padding-left: 25px;">
+								<label for="K1"><strong>User ID:</strong></label><br>
+								<p class="subcopy">
+								<img class="bullet" alt="" src="index_files/bullet-link.gif" border="0"> 
+								<a href="javascript:document.forgotUsername.submit();" tabindex="5">Forgot User ID</a>
+								</p>
+								
+							</td>
+							<td style="width: 190px;">
+							   
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+
+								
+
+
+								   
+								
+									<div style="width:350px;">
+										<input id="id" name="id" tabindex="2" class="contentframework-textfield" size="32" maxlength="32" type="text">
+
+										<table style="margin-top: 5px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tbody><tr>
+												<td valign="top">
+													<input style="float: left; margin-right: 3px; margin-left: 0px;" id="N1" name="N1" tabindex="7" value="" onclick="javascript:if (this.checked) { document.rbunxcgi.NNAME.value='ecatsRememberMe'; } else { document.rbunxcgi.NNAME.value=''; }" type="checkbox">				
+														<span class="subcopy" style="padding-top:3px;"></span>
+												</td>
+												<td class="subcopy" valign="top" width="100%">
+													<label for="N1">Remember My User ID</label>
+													<br>
+													 <img src="index_files/bullet-link.gif" alt="" class="bullet" border="0"> 
+													 <a class="linkedtextandicon" href="javascript:kiosk_OpenWinRTB(%20'https://www.rbcroyalbank.com/onlinebanking/remember_my_card/about.html',%20'RTB',%20kiosk_Type3X,%20kiosk_Type3Y,%20kiosk_Type3R%20);" title="Learn More about Remember My Client Card/Username (opens new window)" tabindex="8">
+													 <span>Learn More</span> 
+													 <img src="index_files/newwindow.gif" alt="(opens new window)" class="icon">
+													 </a> 
+													
+													
+												</td>
+											</tr>
+										</tbody></table>
+									</div> <!--//Right Div top-->
+							</td>
+						</tr>
+
+						<tr align="left" valign="top">
+							<td style="clear: left; width: 170px; padding-left: 25px; padding-top: 10px;">
+								<label for="Q1"><strong>Password:</strong></label><br>
+								<p class="subcopy">
+								<img class="bullet" alt="" src="index_files/bullet-link.gif" border="0"> 
+								<a href="javascript:f3msignin_ForgotPassword();" tabindex="6">Forgot Password</a>
+								</p>
+								
+							</td>
+
+							<td style="width: 500px; padding-top: 10px;">
+								<input id="password" name="password" class="contentframework-textfield" style="float: left; margin-right: 5px;" tabindex="3" onfocus="EnterOn=true;" onblur="EnterOn=false;" type="password">
+								<span class="button button-primary" style="float:left;"><span><button type="submit" tabindex="4" value="go">Sign In <img src="index_files/chevron.gif" alt="" height="12" width="12"></button></span></span>
+							</td>
+						</tr>
+
+
+					</tbody></table>
+
+				</form>
+			</div> <!--//Banner-->
+
+			<div style="clear:left;width:540px;float:left;padding-right:12px">
+				<script language="javascript" type="text/javascript">
+				var pubContURL = "https://www.rbcroyalbank.com";
+				var lang = 0;
+				</script>
+				<script language="JavaScript" type="text/javascript" src="index_files/pubnotice.js"></script>
+				<script language="JavaScript" type="text/javascript" src="index_files/infoatsignin.js"></script>
+				
+<!-- MKTSPACEPT.INC begins -->
+
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		var htmlvar="";
+		if ( browser_NS4 )
+		{
+		 htmlvar += '<div class="infoText">';
+		 htmlvar += '<b>For Netscape users:</b> For optimal performance of this site we recommend upgrading to Netscape 4.7 or higher. Please visit <a href="http://browsers.netscape.com/browsers/main.tmpl">Netscape\'s web site</a> for more information and to upgrade your browser.</div>';
+		 document.write(htmlvar);
+		}
+		//-->
+		</script>
+
+	<form name="ForgotPsw" action="file:///cgi-bin/rbaccess/rbcgi3m01" method="POST">
+	  <input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	  <input name="SST" value="B9sACAAHAAUANQAHAAZcIA??" type="HIDDEN">
+	  <input name="REQUEST" value="ResetPwd" type="HIDDEN">
+	  <input name="F6" value="1" type="HIDDEN">
+	  <input name="F7" value="IB" type="HIDDEN">
+	  <input name="F21" value="PB" type="HIDDEN">
+	  <input name="F22" value="HT" type="HIDDEN">
+	  <input name="CHKCLICK" value="Y" type="HIDDEN">
+	  <input name="K1" value="" type="HIDDEN">
+	  <noscript>
+		&amp;amp;amp;amp;lt;input name="NOJAVASCRIPT" type="HIDDEN" value="Y" /&amp;amp;amp;amp;gt;
+	  </noscript>
+	</form>
+
+	<form name="forgotUsername" action="file:///cgi-bin/rbaccess/rbcgi3m01" method="POST">
+	  <input name="F6" value="1" type="HIDDEN">
+	  <input name="F7" value="IB" type="HIDDEN">
+	  <input name="F21" value="PB" type="HIDDEN">
+	  <input name="F22" value="HT" type="HIDDEN">
+	  <input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	  <input name="REQUEST" value="ForgotUsername" type="HIDDEN">
+	</form>
+
+	<!--JGMA: -->
+	<form name="enterCard" action="file:///cgi-bin/rbaccess/rbcgi3m01" method="POST">
+
+	  <input name="F6" value="1" type="HIDDEN">
+	  <input name="F7" value="IB" type="HIDDEN">
+	  <input name="F21" value="IB" type="HIDDEN">
+	  <input name="F22" value="IB" type="HIDDEN">
+	  <input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	  <input name="REQUEST" value="ClientSignin" type="HIDDEN">
+	  <input name="XNN" value="1" type="HIDDEN">
+	</form>
+
+	<form name="remNick" action="file:///cgi-bin/rbaccess/rbcgi3m01" method="POST">
+	  <input name="F6" value="1" type="HIDDEN">
+	  <input name="F7" value="IB" type="HIDDEN">
+	  <input name="F21" value="IB" type="HIDDEN">
+	  <input name="F22" value="IB" type="HIDDEN">
+	  <input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	  <input name="REQUEST" value="ecatsRemoveRequest" type="HIDDEN">
+	  <input name="CCID" value="" type="HIDDEN">
+	  <input name="K1" value="" type="HIDDEN">
+	  <input name="INVALIDCCID" value="N" type="HIDDEN">
+	</form>
+	<!--JGMA. -->
+
+	<form name="GOCANACT" action="file:///cgi-bin/rbaccess/rbcgi3m01" method="POST">
+	<input name="F6" value="1" type="HIDDEN">
+	<input name="F7" value="IB" type="HIDDEN">
+	<input name="F21" value="PB" type="HIDDEN">
+	<input name="F22" value="HT" type="HIDDEN">
+	<input name="D" type="HIDDEN">
+	<input name="REQUEST" value="PreparingCanact" type="HIDDEN">
+	</form>
+	<form name="SIGNOUT2" method="POST" action="file:///cgi-bin/rbaccess/rbcgi3m01">
+	<input name="REQUEST" value="SIGNOUT" type="HIDDEN">
+	<input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	<input name="F8" value="1" type="HIDDEN">
+	<input name="F22" value="HT" type="HIDDEN">
+	<input name="SUBMIT" src="comp353_files/trans.gif" alt="X" border="0" height="1" type="HIDDEN" width="1">
+	<input name="TIMEOUT" value="" type="HIDDEN">
+	</form>
+
+	<form name="SIGNOUTNS" method="POST" action="file:///cgi-bin/rbaccess/rbcgi3m01">
+	<input name="REQUEST" value="SignoutNS" type="HIDDEN">
+	<input name="LANGUAGE" value="ENGLISH" type="HIDDEN">
+	<input name="F22" value="HT" type="HIDDEN">
+	<input name="F6" value="1" type="HIDDEN">
+	<input name="F7" value="IB" type="HIDDEN">
+	<input name="REDIRURL" value="" type="HIDDEN">
+	<input name="REDIRDELAY" value="" type="HIDDEN">
+	<input name="INFO_TEXT" value="" type="HIDDEN">
+	<input name="REDIRLINK" value="" type="HIDDEN">
+	<input name="NOLINKS" value="" type="HIDDEN">
+	<input name="TIMEOUT" value="" type="HIDDEN">
+	<input name="CL_TYPE_BUS" value="" type="HIDDEN">
+	<input name="SURVEYID" value="" type="HIDDEN">
+	</form>
+
+	</div> <!--//Layout-->
+
+<!-- Global Footer Starts -->
+	<div id="globalfooter-main" class="OLBAlternatable">
+		<p>JMC353_1 Bank University Project, Copyright 2011		</p>
+		<p id="globalfooter-tool-line2">
+			<span class="globalfooter-tool" id="tool-totop"><a href="comp353.html#top" class="linkedtextandicon"><span>To Top</span> <img src="index_files/totopbutton.gif" alt="To Top" height="16" width="16"></a></span>	
+		</p>
+	</div>
+<!-- Global Footer Ends -->
+
+<img src="index_files/a.gif" alt="" border="0" height="1" width="1">
+
+	<script language="JavaScript" type="text/javascript">
+	  <!--
+		document.rbunxcgi.K1.focus();
+// 3MDELTA.JS
+{
+  var cdate = new Date();
+  var delta = Math.round( cdate.valueOf() / 1000 );
+  var pDelta = rbcGetCookie( "3mDELTA", null );
+  var dtype = '0';
+
+  if ( pDelta != null )
+  {
+    var loc = pDelta.indexOf( '/', 0 );
+    if ( loc != -1 )
+      dtype = pDelta.substring( loc + 1, pDelta.length );
+  }
+
+  cdate = new Date( cdate.valueOf() + 604800000 ); // 7 days
+
+  if ( browser_IE || browser_IE4 || browser_MAC || browser_IE4M )
+  {
+    if ( delta < 2000000000 && delta > 315532800 )  // sanity test -- This will break in 2033
+    {
+      delta -= 1312696387;
+      if ( delta > -60 && delta < 60 ) delta = 0;
+      rbcSetCookie( "3mDELTA", delta + "/" + dtype, cdate.toGMTString(), "/" );
+    }
+  }
+  else rbcSetCookie( "3mDELTA", "0/" + dtype, cdate.toGMTString(), "/" );
+
+  if ( rbcGetCookie( "3mDELTA", null ) == null )
+  {
+  }
+}
+// 3MDELTA.JS
+	  //-->
+	</script>
+</div> <!--//Wrapper-->
+
+
+<!--  Start 3MCLICKTK.JS -->
+<script language="javascript" type="text/javascript">
+<!--
+var CT_I_Datasets = ['XXDtZ12Ou3WtAF'];
+var CT_I_FirstPartyDomain = '.royalbank.com';
+var CT_I_FirstPartyJDC = '1';
+var CT_I_FirstPartyCookies = '0';
+var CT_I_EnableExitTracking = '1';
+var CT_I_LocalLinks = ['www1.royalbank.com', '198.96.131.233'];
+var CT_I_OtherFileExtensionsToReport = [''];
+var CT_I_Path = '//stats1.clicktracks.com/cgi-bin/ctasp-server.cgi';
+
+//-->
+</script>
+
+<!--  End 3MCLICKTK.JS -->
+
+
+ <script language="JavaScript" type="text/javascript" src="index_files/guj.js"></script>
+
+
+
+<span id="remotingDiv"></span><div id="imacros-bookmark-div" style="display: none; "><textarea id="imacros-macro-container"></textarea></div></div>

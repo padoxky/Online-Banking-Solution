@@ -1,0 +1,50 @@
+<?php include("header.php"); ?>
+
+<html>
+	<head>
+		<title>Create Branch</title>
+	</head>
+	
+	<script>
+		function validate(form) {
+			fail += validateBranchName(form.branch_name.value)
+			fail += validateManagerID(form.manager_id.value)
+			if (fail == "") 
+				return true
+			else {
+				alert(fail); 
+				return false
+			}
+		}
+		
+		
+		function validateBranchName(field) {
+			if (field == "")
+				return "No branch name was entered.\n"
+			return ""
+		}
+		
+		function validateManagerID(field) {
+			if (field == "")
+				return "No manager ID was entered.\n"
+			return ""
+		}
+	</script>
+	
+	<body>
+<p>Create a branch:</p>
+<form method="post" action="create_branch.php" onsubmit="return validate(this)">
+<pre>			  Branch name: <input name="branch_name" type="text" /> <br />
+			     Address: <input name="address" type="text" /> <br />
+			        City: <input name="city" type="text" /> <br />
+			       Phone: <input name="phone" type="text" /> <br />
+			         Fax: <input name="fax" type="text" /> <br />
+			Opening Date: <input name="opening_date" type="text" /> <br />
+			  Manager ID: <input name="manager_id" type="text" /> <br />
+			<input type="submit" />
+		</pre>
+</form>
+</body>
+</html>
+
+<?php include("footer.php"); ?>

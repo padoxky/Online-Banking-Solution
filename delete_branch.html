@@ -1,0 +1,34 @@
+<?php include("header.php"); ?>
+<html>
+	<head>
+		<title>Delete Branch</title>
+	</head>
+	
+	<script>
+		function validate(form) {
+			fail = validateBranchID(form.branch_id.value)
+			if (fail == "") 
+				return true
+			else {
+				alert(fail); 
+				return false
+			}
+		}
+		
+		function validateBranchID(field) {
+			if (field == "") 
+				return "No branch ID was entered.\n"
+			return ""
+		}
+	</script>
+	
+	<body>
+		Delete a branch: <br/>
+		<form method = "post" action = "delete_branch.php" onSubmit = "return validate(this)"> <pre>
+			   Branch ID: <input type = "text" name = "branch_id"/> <br/>
+			<input type = "submit" />
+		</pre></form>
+	</body>
+</html>
+	
+<?php include("footer.php"); ?>
