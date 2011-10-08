@@ -294,7 +294,7 @@ elif form.has_key("accountTrans") and form["accountTrans"].value!="":
 	
 	
 	
-print '<html><body><a href="/comp353/beta/">Home</a><br />'
+print '<html><body><a href="/comp353/demo/">Home</a><br />'
 print html
 print "</html></body>"
 

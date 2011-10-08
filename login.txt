@@ -439,7 +439,7 @@ else:
 	html="missing what or id"
 	
 
-print '<html><body><a href="/comp353/beta">Login</a><br />'
+print '<html><body><a href="/comp353/demo">Logout</a><br />'
 print html
 print "</html></body>"
 
