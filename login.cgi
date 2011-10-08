@@ -9,12 +9,12 @@ import cgitb; cgitb.enable()
 #load up the form
 form=cgi.FieldStorage()
 
-#create a db connection
+#create a db connection, place databass info here
 try:
-	conn = MySQLdb.connect (host = "bankc35320110808.db.7939020.hostedresource.com",
-						   user = "bankc35320110808",
-						   passwd = "comP353",
-						   db = "bankc35320110808")
+	conn = MySQLdb.connect (host = "",
+				user = "",
+				passwd = "",
+				db = "")
 except MySQLdb.Error, e:
 	print "Error %d: %s" % (e.args[0], e.args[1])
 	sys.exit (1)
